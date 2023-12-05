@@ -28,3 +28,43 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+  body {
+    font-size: 1.5rem;
+    background-color: aqua;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  body {
+    font-size: 2rem;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-text {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--light);
+    background-color: var(--dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--dark);
+    background-color: var(--light);
+  }
+}
