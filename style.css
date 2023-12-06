@@ -8,6 +8,7 @@
 
 body {
   background-color: var(--light);
+  font-family: 'Indie Flower';
 }
 
 h1 {
@@ -29,13 +30,43 @@ img {
   flex-wrap: wrap;
 }
 
+.nav__container {
+    background: var(--teal);
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+	justify-content: space-between;
+	border-radius: 5px;
+	box-shadow: 0 3px 7px 0 rgb(13, 59, 102, 0.2);
+}
+
+.ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+.ul__navbar {
+	width: 100%;
+}
+
+.links {
+	color: var(--light);
+	font-family: 'Concert One';
+	font-size: 1.5em;
+    font-weight: bolder;
+	text-decoration: none;
+}
+
+.links:hover {
+	color: var(--coral);
+}
+
 @media only screen and (min-width: 700px) {
   h1 {
     font-size: 3rem;
   }
   body {
     font-size: 1.5rem;
-    background-color: aqua;
   }
 }
 
@@ -45,7 +76,6 @@ img {
   }
   body {
     font-size: 2rem;
-    background-color: red;
   }
 }
 
