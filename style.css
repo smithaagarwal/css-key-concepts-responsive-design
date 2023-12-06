@@ -28,6 +28,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .nav__container {
@@ -37,7 +38,6 @@ img {
     align-items: center;
 	justify-content: space-between;
 	border-radius: 5px;
-	box-shadow: 0 3px 7px 0 rgb(13, 59, 102, 0.2);
 }
 
 .ul {
@@ -67,6 +67,9 @@ img {
   }
   body {
     font-size: 1.5rem;
+  }
+  .card {
+    width: 30%;
   }
 }
 
