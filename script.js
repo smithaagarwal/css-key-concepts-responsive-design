@@ -141,3 +141,12 @@ const cats = [
     species[i].innerText = `Species: ${cats[i].species}`;
   }
 })();
+
+function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav__container") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav__container";
+    }
+  }

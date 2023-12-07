@@ -15,6 +15,9 @@ h1 {
   font-size: 2.25rem;
 }
 
+li {
+    list-style-type: none;
+}
 .card {
   padding: 0.625rem;
   margin: 0.625rem;
@@ -33,6 +36,7 @@ img {
 
 .nav__container {
     background: var(--teal);
+    overflow: hidden;
 }
 
 .ul {
@@ -42,11 +46,14 @@ img {
 
 
 .links {
+    float: left;
+    display: block;
 	color: var(--light);
 	font-family: 'Concert One';
 	font-size: 1.5em;
     font-weight: bolder;
 	text-decoration: none;
+    text-align: center;
 }
 
 .links:hover {
@@ -57,7 +64,7 @@ img {
     display: none;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   h1 {
     font-size: 3rem;
   }
@@ -90,12 +97,23 @@ img {
   .page-text {
     display: none;
   }
+  .links{
+    display: none;
+  }
   .nav__hamburger {
-    color: var(--light);
-    background-color:var(--teal);
-    width: 100%;
-    float: left;
+    float: right;
     display: block;
+  }
+  .nav__container.responsive {position: relative;}
+  .nav__container.responsive .nav__hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav__container.responsive .links {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
